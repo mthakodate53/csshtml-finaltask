@@ -1,5 +1,6 @@
 body {
   font-family: Inter;
+  --dark2: #555;
   --main-gray: #666666;
   --main-black: black;
   --default-small-size: 1.1rem;
@@ -424,8 +425,8 @@ footer i {
   .wrapper {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     position: absolute;
-    width: 75%;
-    left: 12.5%;
+    width: 100%;
+    left: 0;
     overflow-x: clip;
   }
 
@@ -441,8 +442,8 @@ footer i {
   .top-menu > div > a {
     text-decoration: none;
     margin-left: 1vw;
-    font-size: 16px;
-    color: var(--main-gray);
+    font-size: 1.25rem;
+    color: var(--dark2);
   }
 
   .top-menu a:nth-child(4) {
@@ -492,6 +493,10 @@ footer i {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding-bottom: 0;
+  }
+
+  #boomerang {
+    text-align: left;
   }
 
   #droplet,
