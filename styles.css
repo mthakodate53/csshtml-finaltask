@@ -137,9 +137,9 @@ h4 {
 .early-bird {
   background: linear-gradient(
     to right,
-    rgba(255, 56, 99, 0.7),
-    rgba(255, 128, 57, 0.7),
-    rgba(123, 213, 125, 0.7)
+    rgba(255, 56, 99, 1),
+    rgba(255, 128, 57, 1),
+    rgba(123, 213, 125, 1)
   );
   height: 30dvh;
   display: flex;
@@ -372,6 +372,12 @@ footer i {
   #opendoor,
   #boomerang {
     display: none;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .top-cta img {
+    height: 550px;
   }
 }
 
