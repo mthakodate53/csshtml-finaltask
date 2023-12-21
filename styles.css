@@ -59,7 +59,7 @@ h4 {
 .top-cta {
   padding-top: 2vh;
   position: relative;
-  height: 60dvh;
+  height: 56dvh;
   width: 100%;
 }
 
@@ -183,9 +183,25 @@ h4 {
   max-height: 40px;
 }
 
+#boomerang-a,
+#qrco {
+  text-align: left;
+}
+
+#blimp,
+#droplet {
+  text-align: right;
+}
+
 .gallery {
   padding-bottom: 6vh;
 }
+
+.gallery-text p {
+  color: var(--dark2);
+  line-height: 150%;
+}
+
 .gallery h2 {
   margin-top: 2vh;
   margin-bottom: 0;
@@ -432,6 +448,10 @@ footer i {
 }
 
 @media screen and (min-width: 1200px) {
+  .top-cta {
+    height: 65dvh;
+  }
+
   .has-padding {
     padding-left: 5dvw;
     padding-right: 5dvw;
@@ -511,13 +531,14 @@ footer i {
     padding-top: 8dvh;
   }
 
-  #boomerang-a {
-    text-align: left;
-  }
-
   #droplet,
   #opendoor {
     text-align: right;
+  }
+
+  #qrco,
+  #blimp {
+    text-align: center;
   }
 
   .featured-on a img {
@@ -623,5 +644,9 @@ footer i {
   footer h5 {
     letter-spacing: 0.1rem;
     margin-top: 5px;
+  }
+
+  footer {
+    padding-top: 8dvh;
   }
 }
