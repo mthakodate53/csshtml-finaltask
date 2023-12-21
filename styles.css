@@ -1,8 +1,9 @@
 body {
   font-family: Inter;
-  --main-gray: #666666;
-  --main-black: black;
-  --default-small-size: 1.1rem;
+  --dark2: #555;
+  --dark1: #111;
+  --orange: #ff8139;
+  --default-small-size: 1.25rem;
   background-color: #eeeeee;
   border-radius: 15px;
 }
@@ -11,26 +12,28 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 900;
-  font-size: 3em;
+  font-size: 3rem;
+  color: var(--dark1);
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 
 h4 {
   color: #ff3998;
-  letter-spacing: 1px;
-  font-weight: 600;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .wrapper {
   background-color: white;
   border-radius: 15px;
   position: absolute;
-  width: 98%;
-  left: 1%;
+  width: 100%;
+  left: 0;
   overflow-x: clip;
 }
 
@@ -50,13 +53,13 @@ h4 {
 
 .top-menu .icon {
   display: none;
-  color: var(--main-gray);
+  color: var(--dark2);
 }
 
 .top-cta {
   padding-top: 2vh;
   position: relative;
-  height: 55dvh;
+  height: 60dvh;
   width: 100%;
 }
 
@@ -74,10 +77,11 @@ h4 {
 }
 
 .cta-text p {
-  font-size: var(--default-small-size);
-  width: 70%;
-  color: var(--main-gray);
+  width: 80%;
+  color: var(--dark2);
   font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 150%;
   margin-bottom: 3dvh;
   padding-bottom: 1dvh;
 }
@@ -94,9 +98,9 @@ h4 {
   position: relative;
   z-index: 1;
   border-radius: 50px;
-  background: linear-gradient(to right, #ff3a64, #ff8039, #7bd57d);
+  background: linear-gradient(to right, #ff3b62, #ff3a64, #ff8039, #7bd57d);
   cursor: pointer;
-  color: var(--main-black);
+  color: var(--dark1);
   font-weight: 600;
 }
 
@@ -149,7 +153,7 @@ h4 {
 .bird-text {
   padding-left: 6dvw;
   padding-right: 6dvw;
-  width: 75%;
+  width: 100%;
 }
 
 .bird-text h2 {
@@ -157,9 +161,10 @@ h4 {
 }
 
 .bird-text p {
-  margin-top: 1dvh;
+  margin-top: 1.5dvh;
   margin-bottom: 5dvh;
-  font-size: var(--default-small-size);
+  font-size: 1.25rem;
+  width: 80%;
 }
 
 .featured-on {
@@ -201,7 +206,7 @@ h4 {
 }
 
 .gallery p {
-  font-size: var(--default-small-size);
+  font-size: 1.25rem;
   margin-bottom: 0;
 }
 
@@ -217,10 +222,10 @@ h4 {
 }
 .nft-info {
   display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .nft-info-left p,
@@ -245,15 +250,15 @@ h4 {
 }
 
 #series {
-  color: orange;
+  color: var(--orange);
   text-transform: uppercase;
-  font-size: 0.7em;
+  font-size: 0.75rem;
 }
 
 #bid {
-  color: var(--main-gray);
+  color: var(--dark2);
   text-transform: uppercase;
-  font-size: 0.7em;
+  font-size: 0.75rem;
 }
 
 .fa-ethereum,
@@ -262,7 +267,7 @@ h4 {
 }
 
 .fa-ethereum {
-  color: orange;
+  color: var(--orange);
 }
 
 #bid-amount,
@@ -272,7 +277,7 @@ h4 {
 
 #nft-number,
 #time-left {
-  color: var(--main-gray);
+  color: var(--dark2);
 }
 
 hr {
@@ -284,16 +289,16 @@ hr {
 .bottom-cta {
   padding-top: 2vh;
   position: relative;
-  height: 60dvh;
+  height: 65dvh;
   width: 100%;
   overflow-x: hidden;
 }
 
 .bottom-cta img {
   position: absolute;
-  left: 50%;
+  left: 55%;
   bottom: 0;
-  height: 400px;
+  height: 440px;
 }
 
 .bottom-cta .cta-text {
@@ -305,33 +310,36 @@ hr {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   row-gap: 2dvh;
+  padding-top: 2dvh;
 }
 
 .footer-links-grid > div {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: var(--main-gray);
+  color: var(--dark2);
 }
 
 .footer-links-grid a {
   text-decoration: none;
-  color: var(--main-gray);
+  color: var(--dark2);
   font-size: var(--default-small-size);
+  margin-bottom: 6px;
 }
 
 .footer-links-grid h5 {
-  margin-bottom: 1dvh;
-  font-size: 16px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
   font-weight: 700;
+  letter-spacing: 0.1rem;
 }
 
 .copyright-info {
-  margin-top: 5vh;
+  margin-top: 6vh;
 }
 
 .copyright-main {
-  color: var(--main-gray);
+  color: #999;
 }
 
 .social-links-footer {
@@ -345,8 +353,8 @@ footer {
 }
 
 footer i {
-  color: var(--main-gray);
-  margin-right: 5px;
+  color: var(--dark2);
+  margin-right: 8px;
   font-size: var(--default-small-size);
 }
 
@@ -355,6 +363,10 @@ footer i {
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 2dvh;
+}
+
+.footer-left p {
+  padding-top: 5px;
 }
 
 .copyright-left {
@@ -379,32 +391,36 @@ footer i {
   .top-cta img {
     height: 550px;
   }
+
+  .top-cta p {
+    width: 60%;
+  }
 }
 
 @media screen and (max-height: 700px) {
   .top-cta {
-    height: 60dvh;
+    height: 75dvh;
   }
   .bottom-cta {
-    height: 80dvh;
+    height: 85dvh;
   }
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 375px) {
   .top-cta {
-    height: 60dvh;
+    height: 75dvh;
   }
   .bottom-cta {
-    height: 70dvh;
+    height: 85dvh;
   }
 }
 
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 500px) {
   .top-cta {
-    height: 100dvh;
+    height: 130dvh;
   }
   .bottom-cta {
-    height: 100dvh;
+    height: 130dvh;
   }
 }
 
@@ -424,8 +440,8 @@ footer i {
   .wrapper {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     position: absolute;
-    width: 75%;
-    left: 12.5%;
+    width: 100%;
+    left: 0;
     overflow-x: clip;
   }
 
@@ -441,8 +457,8 @@ footer i {
   .top-menu > div > a {
     text-decoration: none;
     margin-left: 1vw;
-    font-size: 16px;
-    color: var(--main-gray);
+    font-size: 1.25rem;
+    color: var(--dark2);
   }
 
   .top-menu a:nth-child(4) {
@@ -454,12 +470,12 @@ footer i {
   }
 
   .cta-text p {
-    width: 50%;
+    width: 60%;
   }
 
   .top-cta img {
-    left: 40%;
-    height: 650px;
+    left: 45%;
+    height: 680px;
   }
 
   .early-bird {
@@ -492,6 +508,11 @@ footer i {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding-bottom: 0;
+    padding-top: 8dvh;
+  }
+
+  #boomerang-a {
+    text-align: left;
   }
 
   #droplet,
@@ -513,6 +534,10 @@ footer i {
     padding-right: 5dvw;
   }
 
+  .gallery-text p {
+    margin-top: 3dvh;
+  }
+
   #series,
   #bid-amount {
     white-space: nowrap;
@@ -524,6 +549,7 @@ footer i {
   .gallery-container {
     gap: calc(8% / 3);
     justify-content: space-between;
+    margin-top: 6dvh;
     overflow-x: hidden;
     padding-left: 0;
     padding-right: 0;
@@ -537,18 +563,14 @@ footer i {
     overflow: hidden;
   }
 
-  #nft-name,
-  #nft-number,
-  #bid-amount,
-  #time-left,
-  #fa-ethereum {
-    font-size: min(1vw, 1.25rem);
+  .bottom-cta h4 {
+    padding-top: 10dvh;
   }
 
   .bottom-cta {
     padding-top: 2vh;
     position: relative;
-    height: 50dvh;
+    height: 60dvh;
     width: 100%;
     overflow-x: hidden;
   }
@@ -568,11 +590,12 @@ footer i {
   .copyright-info {
     display: flex;
     justify-content: space-between;
+    margin-top: 8dvh;
   }
 
   .copyright-left {
     display: inline;
-    color: var(--main-gray);
+    color: #999;
   }
 
   .footer-flex-container {
@@ -580,13 +603,25 @@ footer i {
     justify-content: space-between;
   }
 
-  .footer-left {
+  .footer-left,
+  .footer-right {
     align-self: flex-start;
   }
 
   .footer-links-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 4dvw;
+    column-gap: 10dvw;
+    padding-top: 0;
+  }
+
+  .bottom-cta h1 {
+    font-size: 3.5rem;
+    max-width: initial;
+  }
+
+  footer h5 {
+    letter-spacing: 0.1rem;
+    margin-top: 5px;
   }
 }
