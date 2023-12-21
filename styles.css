@@ -502,7 +502,7 @@ footer i {
   .early-bird {
     margin-top: 6dvh;
     margin-bottom: 4dvh;
-    background-image: url(/assets/background.svg);
+    background-image: url(./assets/background.svg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 18px;
